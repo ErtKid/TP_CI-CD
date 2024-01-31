@@ -26,3 +26,9 @@ jobs:
 
       - name: Start Backend Server
         run: uvicorn app.main:app --reload &
+
+      #add some test
+      - name: Test with pytest
+        run: |
+          pip install pytest pytest-cov
+          pytest
