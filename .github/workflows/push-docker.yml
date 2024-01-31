@@ -30,6 +30,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          platforms: windows/x86_64
+          platforms: linux/arm/v7
           push: true
           tags: mavrillon/python-ci:latest
